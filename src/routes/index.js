@@ -8,7 +8,7 @@ const swaggerDocument = require('../../swagger.json')
 
 router.get('/', (req, res) => {
   res.status(200).json({
-    docs: 'https://central-de-erros-sequad3.herokuapp.com/api-docs'
+    docs: 'https://central-de-erros-squad3.herokuapp.com/api-docs'
   })
 })
 
