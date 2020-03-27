@@ -4,10 +4,7 @@
   "description": "Armazena e recupera logs de aplições",
   "main": "./src/bin/server.js",
   "scripts": {
-    "docker": "docker-compose up -d",
-    "syncdb": "node ./src/bin/databaseSynchronization.js",
-    "start": "node ./src/bin/server.js",
-    "dbtest": "node ./src/bin/databaseConnectTesting.js"
+    "start": "node ./src/bin/server.js"
   },
   "author": "Guilherme Cesar Da Silva, Henrique Detoni, Juiliano Freire Ribeiro, Luane Caroline Aquino Cavalcanti",
   "license": "MIT",
