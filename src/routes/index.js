@@ -8,6 +8,7 @@ const swaggerDocument = require('../../swagger.json')
 
 router.get('/', (req, res) => {
   res.status(200).json({
+    message: 'Access the documentation',
     docs: 'https://central-de-erros-squad3.herokuapp.com/api-docs'
   })
 })
