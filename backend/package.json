@@ -7,8 +7,7 @@
     "docker": "docker-compose up -d",
     "syncdb": "node ./src/bin/databaseSynchronization.js",
     "start": "node ./src/bin/server.js",
-    "dbtest": "node ./src/bin/databaseConnectTesting.js",
-    "test": "jest /tests/user.test.js && jest /tests/log.test.js"
+    "dbtest": "node ./src/bin/databaseConnectTesting.js"
   },
   "author": "Guilherme Cesar Da Silva, Henrique Detoni, Juiliano Freire Ribeiro, Luane Caroline Aquino Cavalcanti",
   "license": "MIT",
@@ -17,9 +16,13 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mariadb": "^2.2.0",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.5",
     "swagger-ui-express": "^4.1.4",
     "yup": "^0.28.3"
+  },
+  "engines": {
+    "node": "12.13.1"
   }
 }
